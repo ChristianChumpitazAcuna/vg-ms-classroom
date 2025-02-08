@@ -101,6 +101,21 @@
                     </compilerArgs>
                 </configuration>
             </plugin>
+                  <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>3.4.2</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>repackage</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <mainClass>pe.edu.vallegrande.VgMsClassroomApplication</mainClass>
+            </configuration>
+        </plugin>
         </plugins>
     </build>
 
